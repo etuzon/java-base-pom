@@ -6,7 +6,7 @@
 	<artifactId>base.pom</artifactId>
 	<packaging>pom</packaging>
 
-	<version>1.0.1-base</version>
+	<version>1.0.4-base</version>
 
 	<name>Base pom</name>
 
@@ -120,7 +120,7 @@
 		<dependency>
 			<groupId>org.eltn.java</groupId>
 			<artifactId>tests.core</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.3</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
