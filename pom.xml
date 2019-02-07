@@ -6,7 +6,7 @@
 	<artifactId>base.pom</artifactId>
 	<packaging>pom</packaging>
 
-	<version>1.0.4-base</version>
+	<version>1.0.6-base</version>
 
 	<name>Base pom</name>
 
@@ -94,6 +94,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>3.0.0</version>
+        <configuration>
+          <configLocation>maven/checkstyle/configuration.xml</configLocation>
+        </configuration>
 				<reportSets>
 					<reportSet>
 						<reports>
@@ -106,11 +109,6 @@
 	</reporting>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.8.1</version>
-		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
