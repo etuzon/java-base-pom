@@ -6,7 +6,7 @@
 	<artifactId>base.pom</artifactId>
 	<packaging>pom</packaging>
 
-	<version>1.0.6-base</version>
+	<version>1.0.7-base</version>
 
 	<name>Base pom</name>
 
@@ -56,20 +56,6 @@
 						<version>3.2.1</version>
 					</dependency>
 				</dependencies>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.1</version>
-				<inherited>true</inherited>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
