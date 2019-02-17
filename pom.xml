@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.eltn.java</groupId>
+	<groupId>io.github.tuzon.java</groupId>
 	<artifactId>base.pom</artifactId>
 	<packaging>pom</packaging>
 
-	<version>1.0.7-base</version>
+	<version>1.0.8-base</version>
 
 	<name>Base pom</name>
 
@@ -102,9 +102,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.eltn.java</groupId>
+			<groupId>io.github.tuzon.java</groupId>
 			<artifactId>tests.core</artifactId>
-			<version>1.0.3</version>
+			<version>1.0.4</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
