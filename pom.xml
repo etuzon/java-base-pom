@@ -6,9 +6,26 @@
 	<artifactId>java.base.pom</artifactId>
 	<packaging>pom</packaging>
 
-	<version>1.0.8-base</version>
+	<version>1.0.10-base</version>
 
 	<name>Base pom</name>
+
+  <description>Java base pom</description>
+
+  <url>https://github.com/tuzon/eltn.java.base.pom</url>
+
+  <scm>
+     <url>https://github.com/tuzon/eltn.java.base.pom</url>
+     <connection>https://github.com/tuzon/eltn.java.base.pom.git</connection>
+   </scm>
+
+   <developers>
+      <developer>
+         <name>Eyal Tuzon</name>
+         <email>eyal.tuzon@gmail.com</email>
+         <url>https://github.com/tuzon</url>
+      </developer>
+   </developers>
 
 	<licenses>
 		<license>
@@ -57,6 +74,57 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9.1</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.7</version>
+        <extensions>true</extensions>
+        <configuration>
+           <serverId>ossrh</serverId>
+           <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+           <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
 		</plugins>
 	</build>
 
@@ -93,6 +161,13 @@
 			</plugin>
 		</plugins>
 	</reporting>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 
 	<dependencies>
 		<dependency>
