@@ -6,17 +6,17 @@
 	<artifactId>java.base.pom</artifactId>
 	<packaging>pom</packaging>
 
-	<version>1.0.10-base</version>
+	<version>1.0.12-base</version>
 
 	<name>Base pom</name>
 
-  <description>Java base pom</description>
+  <description>Base pom for Java projects</description>
 
-  <url>https://github.com/tuzon/eltn.java.base.pom</url>
+  <url>https://github.com/tuzon/Java-Base-Pom</url>
 
   <scm>
-     <url>https://github.com/tuzon/eltn.java.base.pom</url>
-     <connection>https://github.com/tuzon/eltn.java.base.pom.git</connection>
+     <url>https://github.com/tuzon/Java-Base-Pom</url>
+     <connection>https://github.com/tuzon/Java-Base-Pom.git</connection>
    </scm>
 
    <developers>
@@ -179,7 +179,7 @@
 		<dependency>
 			<groupId>io.github.tuzon</groupId>
 			<artifactId>java.tests.core</artifactId>
-			<version>1.0.4</version>
+			<version>1.0.5</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
