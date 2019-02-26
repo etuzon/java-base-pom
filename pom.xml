@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.github.tuzon</groupId>
+	<groupId>io.github.etuzon</groupId>
 	<artifactId>java.base.pom</artifactId>
 	<packaging>pom</packaging>
 
-	<version>1.0.12-base</version>
+	<version>1.0.14-base</version>
 
 	<name>Base pom</name>
 
@@ -23,7 +23,7 @@
       <developer>
          <name>Eyal Tuzon</name>
          <email>eyal.tuzon@gmail.com</email>
-         <url>https://github.com/tuzon</url>
+         <url>https://github.com/etuzon</url>
       </developer>
    </developers>
 
@@ -177,9 +177,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>io.github.tuzon</groupId>
+			<groupId>io.github.etuzon</groupId>
 			<artifactId>java.tests.core</artifactId>
-			<version>1.0.5</version>
+			<version>1.0.8</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
