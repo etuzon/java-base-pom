@@ -6,7 +6,7 @@
 	<artifactId>java.base.pom</artifactId>
 	<packaging>pom</packaging>
 
-	<version>1.0.14-base</version>
+	<version>1.0.15-base</version>
 
 	<name>Base pom</name>
 
@@ -22,7 +22,7 @@
    <developers>
       <developer>
          <name>Eyal Tuzon</name>
-         <email>eyal.tuzon@gmail.com</email>
+         <email>eyal.tuzon.dev@gmail.com</email>
          <url>https://github.com/etuzon</url>
       </developer>
    </developers>
@@ -40,17 +40,17 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
-				<version>3.7.1</version>
+				<version>3.12.1</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.4.1</version>
 			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.0</version>
+				<version>0.8.8</version>
 				<executions>
 					<execution>
 						<id>prepare-agent</id>
@@ -70,14 +70,14 @@
 					<dependency>
 						<groupId>commons-collections</groupId>
 						<artifactId>commons-collections</artifactId>
-						<version>3.2.1</version>
+						<version>3.2.2</version>
 					</dependency>
 				</dependencies>
 			</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>2.2.1</version>
+        <version>3.2.1</version>
         <executions>
           <execution>
             <id>attach-sources</id>
@@ -90,7 +90,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.9.1</version>
+        <version>3.4.1</version>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -103,7 +103,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.5</version>
+        <version>3.0.1</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>
@@ -117,7 +117,7 @@
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.7</version>
+        <version>1.6.13</version>
         <extensions>true</extensions>
         <configuration>
            <serverId>ossrh</serverId>
@@ -147,7 +147,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.2.0</version>
         <configuration>
           <configLocation>maven/checkstyle/configuration.xml</configLocation>
         </configuration>
@@ -173,13 +173,13 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.9.8</version>
+			<version>7.6.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.github.etuzon</groupId>
 			<artifactId>java.tests.core</artifactId>
-			<version>1.0.8</version>
+			<version>1.0.9</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
